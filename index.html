@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Urfa Hasan Fattah, a Computer Science student specializing in web development and AI. Explore my projects and skills.">
+  <meta name="keywords" content="Urfa Hasan Fattah, web developer, portfolio, computer science, HTML, CSS, JavaScript">
+  <meta name="author" content="Urfa Hasan Fattah">
+  <meta property="og:title" content="Urfa Hasan Fattah | Web Developer & Computer Science Portfolio">
+  <meta property="og:description" content="Explore the portfolio of Urfa Hasan Fattah, showcasing web development projects and technical skills.">
+  <meta property="og:image" content="https://uhf-portfolio.vercel.app/assets/images/me.webp">
+  <meta property="og:url" content="https://uhf-portfolio.vercel.app/">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Urfa Hasan Fattah | Web Developer & Computer Science Portfolio</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white font-sans transition-colors duration-300">
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle" class="fixed top-4 right-4 z-50 p-2 rounded-full bg-blue-500 text-white" aria-label="Toggle theme">
+    <i class="fas fa-sun"></i>
+  </button>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-to-r from-blue-900 to-blue-600 fixed-top shadow-lg" role="navigation">
+    <div class="container">
+      <a class="navbar-brand flex items-center space-x-2" href="index.html">
+        <img src="assets/images/me.webp" alt="Urfa Hasan Fattah Logo" class="w-8 h-8 rounded-full border-2 border-indigo-300">
+        <span class="font-bold">UHF</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-vh-100 d-flex align-items-center justify-content-center text-center bg-gradient-to-br from-black to-blue-900 relative">
+    <div class="absolute inset-0 bg-gradient-radial from-white/10 to-black/60 z-0"></div>
+    <div class="container z-10">
+      <img src="assets/images/me.webp" alt="Urfa Hasan Fattah" class="rounded-circle border-4 border-indigo-300 shadow-lg mb-4 hover-rotate" width="240" height="240" loading="lazy">
+      <h1 class="display-3 fw-bold bg-gradient-to-r from-white to-indigo-300 text-transparent bg-clip-text mb-4">Urfa Hasan Fattah</h1>
+      <p class="lead">Digital Visionary | <span id="dynamic-text" class="text-indigo-300">Programmer</span></p>
+      <p class="lead opacity-90">Architecting the future with code, design, and innovation</p>
+      <a href="#projects" class="btn btn-primary mt-4">Explore My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gradient-to-b from-black to-blue-900/20">
+    <div class="container text-center">
+      <h2 class="section-title">About Me</h2>
+      <p class="lead max-w-3xl mx-auto">
+        I’m a Computer Science student at [Your University], passionate about leveraging technology for social impact. My coursework in web development and AI led to projects like a real-time logging tool and a stock price predictor. I received the [Award Name] in 2024 for my research on AI-driven analytics. My goal is to advance sustainable tech solutions through graduate studies.
+      </p>
+      <a href="assets/resume.pdf" download class="btn btn-outline-light mt-4">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-20 bg-gradient-to-b from-black to-blue-900/20">
+    <div class="container">
+      <h2 class="section-title">Creative Gallery</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card bg-dark text-white h-100" data-bs-toggle="modal" data-bs-target="#galleryModal1">
+            <img src="assets/images/gallery1.webp" class="card-img-top" alt="Our Logger UI" loading="lazy">
+            <div class="card-img-overlay d-flex align-items-center justify-content-center opacity-0 hover-opacity-100 transition-opacity">
+              <span class="text-indigo-300 text-lg font-medium">View Details</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100" data-bs-toggle="modal" data-bs-target="#galleryModal2">
+            <img src="assets/images/gallery2.webp" class="card-img-top" alt="Stock Predictor UI" loading="lazy">
+            <div class="card-img-overlay d-flex align-items-center justify-content-center opacity-0 hover-opacity-100 transition-opacity">
+              <span class="text-indigo-300 text-lg font-medium">View Details</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100" data-bs-toggle="modal" data-bs-target="#galleryModal3">
+            <img src="assets/images/gallery3.webp" class="card-img-top" alt="Portfolio Design" loading="lazy">
+            <div class="card-img-overlay d-flex align-items-center justify-content-center opacity-0 hover-opacity-100 transition-opacity">
+              <span class="text-indigo-300 text-lg font-medium">View Details</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Modals -->
+  <div class="modal fade" id="galleryModal1" tabindex="-1" aria-labelledby="galleryModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="galleryModalLabel1">Real-Time Logger Dashboard</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/gallery1.webp" alt="Our Logger UI" class="img-fluid mb-3">
+          <p>Designed a responsive dashboard using HTML, CSS, and JavaScript to visualize application logs in real-time.</p>
+          <a href="https://our-logger.vercel.app/" target="_blank" class="btn btn-primary">Visit Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="galleryModal2" tabindex="-1" aria-labelledby="galleryModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="galleryModalLabel2">Stock Price Predictor</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/gallery2.webp" alt="Stock Predictor UI" class="img-fluid mb-3">
+          <p>Built a web interface for a machine learning model using Bootstrap and JavaScript.</p>
+          <a href="https://github.com/urfa-fattah/ml-predictor" target="_blank" class="btn btn-primary">View Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="galleryModal3" tabindex="-1" aria-labelledby="galleryModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="galleryModalLabel3">Portfolio UI Concept</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/gallery3.webp" alt="Portfolio Design" class="img-fluid mb-3">
+          <p>Explored modern UI trends with Tailwind CSS and Bootstrap.</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gradient-to-b from-black to-blue-900/20">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card bg-dark text-white h-100">
+            <img src="assets/images/project1.webp" class="card-img-top" alt="Our Logger" loading="lazy">
+            <div class="card-body">
+              <h3 class="card-title">Our Logger</h3>
+              <p class="card-text">Developed a real-time logging tool using JavaScript to track application performance. Improved debugging efficiency by 30%.</p>
+              <div class="d-flex justify-content-between">
+                <a href="https://our-logger.vercel.app/" target="_blank" class="text-indigo-300 hover-text-indigo-500">View Live</a>
+                <a href="https://github.com/urfa-fattah/our-logger" target="_blank" class="text-indigo-300 hover-text-indigo-500">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100">
+            <img src="assets/images/project2.webp" class="card-img-top" alt="Stock Price Predictor" loading="lazy">
+            <div class="card-body">
+              <h3 class="card-title">Stock Price Predictor</h3>
+              <p class="card-text">Built a web interface for a machine learning model using Bootstrap, achieving 85% accuracy in predictions.</p>
+              <div class="d-flex justify-content-between">
+                <a href="https://stock-predictor.vercel.app/" target="_blank" class="text-indigo-300 hover-text-indigo-500">View Live</a>
+                <a href="https://github.com/urfa-fattah/ml-predictor" target="_blank" class="text-indigo-300 hover-text-indig-500">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100">
+            <img src="assets/images/project3.webp" class="card-img-top" alt="Portfolio Website" loading="lazy">
+            <div class="card-body">
+              <h3 class="card-title">Portfolio Website</h3>
+              <p class="card-text">Designed this portfolio using HTML, Tailwind CSS, and Bootstrap, optimized for performance and SEO.</p>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="text-indigo-300 hover-text-indigo-500">View Live</a>
+                <a href="https://github.com/urfa-fattah/portfolio" target="_blank" class="text-indigo-300 hover-text-indigo-500">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gradient-to-b from-black to-blue-900/20">
+    <div class="container">
+      <h2 class="section-title">Technical Arsenal</h2>
+      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card bg-dark text-white h-100 text-center">
+            <i class="fas fa-code text-4xl text-indigo-300 mb-3"></i>
+            <h3 class="card-title">HTML5</h3>
+            <p class="card-text small">Structured modern web applications</p>
+            <div class="progress mt-3" style="height: 5px;">
+              <div class="progress-bar bg-indigo-500" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 text-center">
+            <i class="fab fa-css3-alt text-4xl text-indigo-300 mb-3"></i>
+            <h3 class="card-title">CSS3</h3>
+            <p class="card-text small">Styled responsive designs</p>
+            <div class="progress mt-3" style="height: 5px;">
+              <div class="progress-bar bg-indigo-500" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 text-center">
+            <i class="fab fa-js text-4xl text-indigo-300 mb-3"></i>
+            <h3 class="card-title">JavaScript</h3>
+            <p class="card-text small">Added interactivity to web apps</p>
+            <div class="progress mt-3" style="height: 5px;">
+              <div class="progress-bar bg-indigo-500" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 text-center">
+            <i class="fas fa-cogs text-4xl text-indigo-300 mb-3"></i>
+            <h3 class="card-title">Bootstrap</h3>
+            <p class="card-text small">Built responsive layouts</p>
+            <div class="progress mt-3" style="height: 5px;">
+              <div class="progress-bar bg-indigo-500" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 bg-gradient-to-b from-black to-blue-900/20">
+    <div class="container">
+      <h2 class="section-title">My Journey</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card bg-dark text-white h-100">
+            <div class="card-body">
+              <h3 class="card-title">Web Developer</h3>
+              <p class="card-text small opacity-80">2022 - Present</p>
+              <p class="card-text">Crafted responsive, user-centric web solutions with HTML, CSS, and JavaScript.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100">
+            <div class="card-body">
+              <h3 class="card-title">Capstone Project Lead</h3>
+              <p class="card-text small opacity-80">2023 - 2024</p>
+              <p class="card-text">Led a team of 4 to develop a stock prediction tool, achieving 85% accuracy.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100">
+            <div class="card-body">
+              <h3 class="card-title">Research Assistant</h3>
+              <p class="card-text small opacity-80">2021 - 2022</p>
+              <p class="card-text">Contributed to AI-driven analytics research, presenting at a university symposium.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-t from-blue-900 to-black py-12 text-center">
+    <div class="d-flex justify-content-center space-x-6 mb-4">
+      <a href="https://github.com/urfa-fattah" target="_blank" rel="noopener noreferrer" class="text-white hover-text-indigo-300 text-2xl transform hover-scale-110 hover-rotate-12 transition-all">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/urfa-hasan-fattah" target="_blank" rel="noopener noreferrer" class="text-white hover-text-indigo-300 text-2xl transform hover-scale-110 hover-rotate-12 transition-all">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/urfahasanfattah" target="_blank" rel="noopener noreferrer" class="text-white hover-text-indigo-300 text-2xl transform hover-scale-110 hover-rotate-12 transition-all">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/share/17qYgZ7vWM/" target="_blank" rel="noopener noreferrer" class="text-white hover-text-indigo-300 text-2xl transform hover-scale-110 hover-rotate-12 transition-all">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+    <p>© 2025 Urfa Hasan Fattah. Designed with Vision.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

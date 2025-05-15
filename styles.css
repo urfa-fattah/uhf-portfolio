@@ -1,0 +1,176 @@
+/* Custom CSS to complement Tailwind and Bootstrap */
+:root {
+  --black: #0d0d1a;
+  --blue-900: #1e3a8a;
+  --blue-600: #3b82f6;
+  --indigo-300: #a5b4fc;
+  --indigo-500: #60a5fa;
+  --white: #e0e7ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.light-mode {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+body.light-mode .bg-dark {
+  background-color: #e5e7eb !important;
+  color: #1e293b !important;
+}
+
+body.light-mode .text-white {
+  color: #1e293b !important;
+}
+
+body.light-mode .bg-gradient-to-b.from-black.to-blue-900\/20 {
+  background: linear-gradient(to bottom, #f1f5f9, #e5e7eb);
+}
+
+body.light-mode .bg-gradient-to-r.from-blue-900.to-blue-600 {
+  background: linear-gradient(to right, #2563eb, #3b82f6);
+}
+
+body.light-mode .bg-gradient-to-t.from-blue-900.to-black {
+  background: linear-gradient(to top, #2563eb, #f1f5f9);
+}
+
+body.light-mode .text-indigo-300 {
+  color: #3b82f6 !important;
+}
+
+body.light-mode .hover-text-indigo-500:hover {
+  color: #2563eb !important;
+}
+
+body.light-mode .border-indigo-300 {
+  border-color: #3b82f6 !important;
+}
+
+body.light-mode .focus-border-indigo-500:focus {
+  border-color: #2563eb !important;
+}
+
+body.light-mode .bg-indigo-500 {
+  background-color: #3b82f6 !important;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(to right, var(--white), var(--indigo-300));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background: var(--indigo-500);
+  border-radius: 2px;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-img-overlay {
+  transition: opacity 0.3s ease;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.hover-opacity-100:hover {
+  opacity: 1;
+}
+
+.transform {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale-110:hover {
+  transform: scale(1.1);
+}
+
+.hover-rotate-12:hover {
+  transform: rotate(12deg);
+}
+
+.hover-rotate {
+  transition: transform 0.3s ease;
+}
+
+.hover-rotate:hover {
+  transform: rotate(6deg);
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: var(--indigo-300);
+  color: var(--white);
+}
+
+.form-control:focus {
+  border-color: var(--indigo-500);
+  box-shadow: 0 0 5px rgba(96, 165, 250, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.prose {
+  color: inherit;
+}
+
+.prose-invert {
+  color: var(--white);
+}
+
+body.light-mode .prose-invert {
+  color: #1e293b;
+}
+
+.nav-link {
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: translateY(-2px);
+}
+
+.text-indigo-300 {
+  color: var(--indigo-300);
+}
+
+.hover-text-indigo-500:hover {
+  color: var(--indigo-500);
+}
+
+.border-indigo-300 {
+  border-color: var(--indigo-300);
+}
+
+.focus-border-indigo-500:focus {
+  border-color: var(--indigo-500);
+}
+
+.bg-indigo-500 {
+  background-color: var(--indigo-500);
+}
